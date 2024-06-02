@@ -5,7 +5,7 @@ let logoColors = [
   "var(--pear-logo)",
   "var(--apple-logo)",
   "var(--exotic-logo)",
-  "var(--white)"
+  "var(--pear-logo)"
 ]; // Add your logo colors here
 let keyframes = ["wave-pear-effect", "wave-apple-effect", "wave-exotic-effect", "wave-digital-effect"]; // Add your keyframes here
 // Normal GSAP animation.......
