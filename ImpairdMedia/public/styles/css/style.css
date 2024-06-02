@@ -205,6 +205,12 @@ img {
   mix-blend-mode: multiply;
   transition: all ease-in-out 0.3s;
 }
+.homepage-body #section2 .image-four {
+  max-width: 480px;
+}
+.homepage-body #section4 .image-two {
+  max-width: 200px;
+}
 .homepage-body .fruit-image {
   opacity: 1;
   position: absolute;
@@ -212,21 +218,25 @@ img {
 .homepage-body .image-one {
   max-width: 300px;
   bottom: 100px;
+  width: 100%;
 }
 .homepage-body .image-two {
   max-width: 300px;
   top: 23%;
   left: 25%;
+  width: 100%;
 }
 .homepage-body .image-three {
   max-width: 300px;
   top: 23%;
   right: 25%;
+  width: 100%;
 }
 .homepage-body .image-four {
   max-width: 300px;
   bottom: 100px;
   right: 0;
+  width: 100%;
 }
 .homepage-body .section-container-main {
   width: 100vw;
@@ -428,6 +438,12 @@ img {
     height: 60px;
     width: 60px;
     font-size: 20px;
+  }
+  .homepage-body #section2 .image-four {
+    max-width: 280px;
+  }
+  .homepage-body #section4 .image-two {
+    max-width: 100px;
   }
   .homepage-body .image-one {
     max-width: 215px;

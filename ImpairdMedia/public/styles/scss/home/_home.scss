@@ -26,6 +26,18 @@
     mix-blend-mode: multiply;
     transition: all ease-in-out 0.3s;
   }
+
+  #section2 {
+    .image-four {
+      max-width: 480px;
+    }
+  }
+
+  #section4 {
+    .image-two {
+      max-width: 200px;
+    }
+  }
   /*Fruits Images */
   .fruit-image {
     opacity: 1;
@@ -34,21 +46,25 @@
   .image-one {
     max-width: 300px;
     bottom: 100px;
+    width: 100%;
   }
   .image-two {
     max-width: 300px;
     top: 23%;
     left: 25%;
+    width: 100%;
   }
   .image-three {
     max-width: 300px;
     top: 23%;
     right: 25%;
+    width: 100%;
   }
   .image-four {
     max-width: 300px;
     bottom: 100px;
     right: 0;
+    width: 100%;
   }
   /*Section  */
   .section-container-main {
@@ -263,6 +279,19 @@
       width: 60px;
       font-size: 20px;
     }
+
+    #section2 {
+      .image-four {
+        max-width: 280px;
+      }
+    }
+  
+    #section4 {
+      .image-two {
+        max-width: 100px;
+      }
+    }
+
     .image-one {
       max-width: 215px;
       bottom: 150px;
