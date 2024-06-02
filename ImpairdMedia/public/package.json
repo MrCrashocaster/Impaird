@@ -1,7 +1,7 @@
 {
-  "name": "kevinharrell",
+  "name": "impairdmedia",
   "version": "1.0.0",
-  "description": "personal website",
+  "description": "media website",
   "main": "index.js",
   "scripts": {
     "css": "node-sass styles/scss/main.scss styles/css/style.css",
@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MrCrashocaster/kevinharrell"
+    "url": "https://github.com/MrCrashocaster/impairdmedia"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://www.theadscompany.co"
+    "url": "https://www.impaird.com"
   },
   "homepage": "",
   "devDependencies": {

@@ -2,10 +2,111 @@
 /*************************************************
  MEDIA QUERY DEFINITIONS
 *************************************************/
+/* Common Style */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.homepage-body {
+  overflow: hidden !important;
+}
+
+a:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+input:focus-visible {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+button:focus,
+:focus-visible {
+  outline: none;
+  border: none;
+}
+
+/* Root*/
+:root {
+  --pear-can: #e6ffde;
+  --pear-logo: #03403f;
+  --apple-can: #f2675a;
+  --apple-logo: #ec4458;
+  --exotic-can: #9590f1;
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --exotic-logo: #6464ff;
+  --pear-background: #c9e78a;
+  --apple-background: #DABA15;
+  --exotic-background: #c1bff2;
+  --white: #ffffff;
+}
+
+/* Typography */
+h1 {
+  font-family: "Lexend" !important;
+  font-size: 449px !important;
+  line-height: normal !important;
+  color: var(--white-color) !important;
+  margin: 0 !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+h1 a {
+  color: var(--white-color) !important;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "Lexend" !important;
+  font-size: 40px;
+  line-height: normal;
+  margin: 0;
+  font-weight: 900;
+}
+
+/* Header */
+header {
+  padding: 22px 28px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 99;
+  text-align: center;
+}
+
+.logo {
+  color: var(--pear-logo);
+  text-decoration: none;
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 footer {
   position: absolute;
   bottom: 0;
@@ -70,109 +171,15 @@ img {
 }
 
 /* IMPORT FONTS */
-/* Common Style */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.homepage-body {
+  /* Cane Image and Wrapper Image */
+  /*Fruits Images */
+  /*Section  */
+  /* Add this to your CSS */
+  /* Buttons */
+  /*.......... Responsive.............. */
 }
-
-img {
-  width: 100%;
-  height: auto;
-}
-
-body {
-  overflow: hidden !important;
-}
-
-a:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-input:focus {
-  outline: none;
-  border: none;
-  box-shadow: none;
-}
-
-input:focus-visible {
-  outline: none;
-  border: none;
-  box-shadow: none;
-}
-
-button:focus,
-:focus-visible {
-  outline: none;
-  border: none;
-}
-
-/* Root*/
-:root {
-  --pear-can: #e6ffde;
-  --pear-logo: #03403f;
-  --apple-can: #f2675a;
-  --apple-logo: #ec4458;
-  --exotic-can: #9590f1;
-  --black-color: #000000;
-  --white-color: #ffffff;
-  --exotic-logo: #6464ff;
-  --pear-background: #c9e78a;
-  --apple-background: #DABA15;
-  --exotic-background: #c1bff2;
-  --white: #ffffff;
-}
-
-/* Typography */
-h1 {
-  font-family: "Lexend";
-  font-size: 449px !important;
-  line-height: normal !important;
-  color: var(--white-color) !important;
-  margin: 0 !important;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-h1 a {
-  color: var(--white-color) !important;
-  text-decoration: none;
-}
-
-h2 {
-  font-family: "Lexend";
-  font-size: 40px;
-  line-height: normal;
-  margin: 0;
-  font-weight: 900;
-}
-
-/* Header */
-header {
-  padding: 22px 28px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  z-index: 99;
-  text-align: center;
-}
-
-.logo {
-  color: var(--pear-logo);
-  text-decoration: none;
-}
-
-h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* Cane Image and Wrapper Image */
-.cane-image {
+.homepage-body .cane-image {
   max-width: 265px;
   position: absolute;
   top: 50%;
@@ -187,12 +194,10 @@ h1 {
   mask-size: 100% auto;
   overflow: hidden;
 }
-
-.cane-image img {
+.homepage-body .cane-image img {
   width: 100%;
 }
-
-.cane-labels {
+.homepage-body .cane-labels {
   position: absolute;
   top: 0;
   left: 0;
@@ -200,53 +205,43 @@ h1 {
   mix-blend-mode: multiply;
   transition: all ease-in-out 0.3s;
 }
-
-/*Fruits Images */
-.fruit-image {
+.homepage-body .fruit-image {
   opacity: 1;
   position: absolute;
 }
-
-.image-one {
+.homepage-body .image-one {
   max-width: 300px;
   bottom: 100px;
 }
-
-.image-two {
+.homepage-body .image-two {
   max-width: 300px;
   top: 23%;
   left: 25%;
 }
-
-.image-three {
+.homepage-body .image-three {
   max-width: 300px;
   top: 23%;
   right: 25%;
 }
-
-.image-four {
+.homepage-body .image-four {
   max-width: 300px;
   bottom: 100px;
   right: 0;
 }
-
-/*Section  */
-.section-container-main {
+.homepage-body .section-container-main {
   width: 100vw;
   overflow: hidden;
   position: relative;
   z-index: -1;
 }
-
-.section-container {
+.homepage-body .section-container {
   width: 300vw;
   display: flex;
   position: relative;
   transition: all ease-in-out 0.5s;
   align-items: center;
 }
-
-.section {
+.homepage-body .section {
   min-width: 100vw;
   height: 100vh;
   position: relative;
@@ -254,22 +249,16 @@ h1 {
   z-index: -1;
   background: var(--pear-background);
 }
-
-.section:nth-child(2) {
+.homepage-body .section:nth-child(2) {
   background-color: var(--apple-background);
 }
-
-.section:nth-child(3) {
+.homepage-body .section:nth-child(3) {
   background-color: var(--exotic-background);
 }
-
-.section:nth-child(4) {
+.homepage-body .section:nth-child(4) {
   background-color: var(--apple-can);
 }
-
-/* Add this to your CSS */
-/* Buttons */
-button {
+.homepage-body button {
   position: fixed;
   top: 50%;
   right: 30px;
@@ -285,19 +274,16 @@ button {
   transition: all ease-in-out 0.3s;
   cursor: pointer;
 }
-
-#prevButton {
+.homepage-body #prevButton {
   left: 30px;
   right: unset;
   display: none;
   transition: all ease-in 0.3s;
 }
-
-.wave {
+.homepage-body .wave {
   animation: wave-apple-effect 4s linear infinite;
   animation-direction: normal;
 }
-
 @keyframes wave-pear-effect {
   0% {
     box-shadow: 0 0 0 0px var(--pear-background), 0 0 0 0px var(--pear-background);
@@ -354,138 +340,138 @@ button {
     box-shadow: 0 0 0 0px rgba(60, 41, 188, 0), 0 0 0 30px rgba(0, 230, 118, 0);
   }
 }
-/*.......... Responsive.............. */
 @media screen and (max-width: 1550px) {
-  h1 {
+  .homepage-body h1 {
     font-size: 350px !important;
   }
-  .cane-image {
+  .homepage-body .cane-image {
     max-width: 280px;
   }
-  .image-one {
+  .homepage-body .image-one {
     max-width: 300px;
   }
-  .image-two {
+  .homepage-body .image-two {
     max-width: 300px;
     left: 22%;
     top: 10%;
   }
-  .image-three {
+  .homepage-body .image-three {
     max-width: 300px;
   }
-  .image-four {
+  .homepage-body .image-four {
     max-width: 300px;
     right: 40px;
   }
 }
 @media screen and (max-width: 1199px) {
-  h1 {
+  .homepage-body h1 {
     font-size: 300px !important;
   }
-  .cane-image::after {
+  .homepage-body .cane-image::after {
     width: 150%;
   }
-  .image-one {
+  .homepage-body .image-one {
     max-width: 245px;
   }
-  .image-two {
+  .homepage-body .image-two {
     max-width: 245px;
     left: 18%;
     top: 10%;
   }
-  .image-three {
+  .homepage-body .image-three {
     max-width: 245px;
     right: 18%;
   }
-  .image-four {
+  .homepage-body .image-four {
     max-width: 245px;
   }
 }
 @media screen and (max-width: 991px) {
-  h1 {
+  .homepage-body h1 {
     font-size: 240px !important;
   }
-  .cane-image {
+  .homepage-body .cane-image {
     max-width: 250px;
   }
-  button {
+  .homepage-body button {
     height: 80px;
     width: 80px;
     top: 90%;
   }
-  .image-one {
+  .homepage-body .image-one {
     max-width: 235px;
   }
-  .image-two {
+  .homepage-body .image-two {
     max-width: 235px;
     left: 12%;
     top: 12%;
   }
-  .image-three {
+  .homepage-body .image-three {
     max-width: 235px;
     right: 12%;
   }
-  .image-four {
+  .homepage-body .image-four {
     max-width: 235px;
   }
 }
 @media screen and (max-width: 767px) {
-  h1 {
+  .homepage-body h1 {
     font-size: 180px !important;
   }
-  h2 {
+  .homepage-body h2 {
     font-size: 30px;
   }
-  .cane-image {
+  .homepage-body .cane-image {
     max-width: 180px;
   }
-  button {
+  .homepage-body button {
     height: 60px;
     width: 60px;
     font-size: 20px;
   }
-  .image-one {
+  .homepage-body .image-one {
     max-width: 215px;
     bottom: 150px;
   }
-  .image-two {
+  .homepage-body .image-two {
     max-width: 215px;
     left: 12%;
     top: 15%;
   }
-  .image-three {
+  .homepage-body .image-three {
     max-width: 215px;
     right: 10%;
   }
-  .image-four {
+  .homepage-body .image-four {
     max-width: 215px;
     bottom: 150px;
   }
 }
 @media screen and (max-width: 575px) {
-  h1 {
+  .homepage-body h1 {
     font-size: 100px !important;
   }
-  .cane-image::after {
+  .homepage-body .cane-image::after {
     width: 100%;
   }
-  .image-one {
+  .homepage-body .image-one {
     max-width: 200px;
   }
-  .image-two {
+  .homepage-body .image-two {
     max-width: 200px;
     left: 4%;
     top: 18%;
   }
-  .image-three {
+  .homepage-body .image-three {
     max-width: 200px;
     right: 4%;
   }
-  .image-four {
+  .homepage-body .image-four {
     max-width: 200px;
     right: 0;
   }
 }
+
 #contact-body {
   background-color: #c9e78a;
 }
