@@ -81,7 +81,7 @@ h2 {
   font-size: 40px;
   line-height: normal;
   margin: 0;
-  font-weight: 900;
+  font-weight: 900 !important;
 }
 
 /* Header */
