@@ -1,12 +1,13 @@
 //............................................................... Script ...................................................................
 // Data for the sections
-let h1Texts = ["<a href='/video.html'>Video</a>", "<a href='/photography.html'>Photo</a>", "<a href='/design.html'>Design</a>"]; // Add your h1 texts here
+let h1Texts = ["<a href='/video.html'>Video</a>", "<a href='/photography.html'>Photo</a>", "<a href='/design.html'>Design</a>", "<a href='/digital.html'>Digital</a>"]; // Add your h1 texts here
 let logoColors = [
   "var(--pear-logo)",
   "var(--apple-logo)",
-  "var(--exotic-logo)"
+  "var(--exotic-logo)",
+  "var(--white)"
 ]; // Add your logo colors here
-let keyframes = ["wave-pear-effect", "wave-apple-effect", "wave-exotic-effect"]; // Add your keyframes here
+let keyframes = ["wave-pear-effect", "wave-apple-effect", "wave-exotic-effect", "wave-digital-effect"]; // Add your keyframes here
 // Normal GSAP animation.......
 gsap.from(".fruit-image ", { y: "-100vh", delay: 0.5 });
 gsap.to(".fruit-image img", {
@@ -34,7 +35,7 @@ let currentPosition = 0;
 // Add event listeners to the buttons
 nextButton.addEventListener("click", () => {
   // Decrease the current position by 100% (to the left)
-  if (currentPosition > -200) {
+  if (currentPosition > -500) {
     currentPosition -= 100;
     // Update the left position of the cane-labels
     caneLabels.style.left = `${currentPosition}%`;

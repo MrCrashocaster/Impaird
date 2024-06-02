@@ -122,6 +122,7 @@ button:focus,
   --pear-background: #c9e78a;
   --apple-background: #DABA15;
   --exotic-background: #c1bff2;
+  --white: #ffffff;
 }
 
 /* Typography */
@@ -229,37 +230,6 @@ h1 {
   right: 0;
 }
 
-/* After */
-.fruit-image::after {
-  content: "";
-  position: absolute;
-  background: linear-gradient(90deg, #000 3.66%, rgba(0, 0, 0, 0) 92.35%);
-  opacity: 0.43;
-  filter: blur(7.5px);
-  transform: rotate(-6.941deg);
-  right: 0;
-  width: 173px;
-  height: 30px;
-}
-
-.image-one::after {
-  bottom: -50px;
-}
-
-.image-two::after {
-  bottom: -200px;
-  height: 22px;
-}
-
-.image-three::after {
-  bottom: -280px;
-  width: 103px;
-}
-
-.image-four::after {
-  bottom: -50px;
-}
-
 /*Section  */
 .section-container-main {
   width: 100vw;
@@ -291,6 +261,10 @@ h1 {
 
 .section:nth-child(3) {
   background-color: var(--exotic-background);
+}
+
+.section:nth-child(4) {
+  background-color: var(--apple-can);
 }
 
 /* Add this to your CSS */
@@ -358,6 +332,20 @@ button {
   }
   40% {
     box-shadow: 0 0 0 50px rgba(60, 41, 188, 0), 0 0 0 0px var(--exotic-background);
+  }
+  80% {
+    box-shadow: 0 0 0 50px rgba(60, 41, 188, 0), 0 0 0 30px rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0px rgba(60, 41, 188, 0), 0 0 0 30px rgba(0, 230, 118, 0);
+  }
+}
+@keyframes wave-digital-effect {
+  0% {
+    box-shadow: 0 0 0 0px var(--apple-can), 0 0 0 0px var(--apple-can);
+  }
+  40% {
+    box-shadow: 0 0 0 50px rgba(60, 41, 188, 0), 0 0 0 0px var(--apple-can);
   }
   80% {
     box-shadow: 0 0 0 50px rgba(60, 41, 188, 0), 0 0 0 30px rgba(0, 0, 0, 0);
@@ -530,4 +518,14 @@ button {
 }
 #design-body footer .logo {
   color: var(--exotic-logo);
+}
+
+#digital-body {
+  background-color: #f2675a;
+}
+#digital-body h1 {
+  font-size: 8vw !important;
+}
+#digital-body footer .logo {
+  color: var(--white);
 }/*# sourceMappingURL=style.css.map */
