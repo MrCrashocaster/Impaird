@@ -53,9 +53,12 @@ h1 {
   line-height: normal !important;
   color: var(--white-color) !important;
   margin: 0 !important;
+  text-transform: uppercase;
+  font-weight: bold;
 
   a {
     color: var(--white-color) !important;
+    text-decoration: none;
   }
 }
 h2 {
@@ -117,21 +120,21 @@ h1 {
   position: absolute;
 }
 .image-one {
-  max-width: 282px;
+  max-width: 300px;
   bottom: 100px;
 }
 .image-two {
-  max-width: 247px;
+  max-width: 300px;
   top: 23%;
   left: 25%;
 }
 .image-three {
-  max-width: 211px;
+  max-width: 300px;
   top: 23%;
   right: 25%;
 }
 .image-four {
-  max-width: 294px;
+  max-width: 300px;
   bottom: 100px;
   right: 0;
 }
@@ -274,18 +277,18 @@ button {
     max-width: 280px;
   }
   .image-one {
-    max-width: 250px;
+    max-width: 300px;
   }
   .image-two {
-    max-width: 215px;
+    max-width: 300px;
     left: 22%;
     top: 10%;
   }
   .image-three {
-    max-width: 180px;
+    max-width: 300px;
   }
   .image-four {
-    max-width: 260px;
+    max-width: 300px;
     right: 40px;
   }
 }
@@ -297,19 +300,19 @@ button {
     width: 150%;
   }
   .image-one {
-    max-width: 220px;
+    max-width: 245px;
   }
   .image-two {
-    max-width: 185px;
+    max-width: 245px;
     left: 18%;
     top: 10%;
   }
   .image-three {
-    max-width: 180px;
+    max-width: 245px;
     right: 18%;
   }
   .image-four {
-    max-width: 230px;
+    max-width: 245px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -325,19 +328,19 @@ button {
     top: 90%;
   }
   .image-one {
-    max-width: 180px;
+    max-width: 235px;
   }
   .image-two {
-    max-width: 165px;
+    max-width: 235px;
     left: 12%;
     top: 12%;
   }
   .image-three {
-    max-width: 150px;
+    max-width: 235px;
     right: 12%;
   }
   .image-four {
-    max-width: 200px;
+    max-width: 235px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -356,20 +359,20 @@ button {
     font-size: 20px;
   }
   .image-one {
-    max-width: 180px;
+    max-width: 215px;
     bottom: 150px;
   }
   .image-two {
-    max-width: 145px;
+    max-width: 215px;
     left: 12%;
     top: 15%;
   }
   .image-three {
-    max-width: 130px;
+    max-width: 215px;
     right: 10%;
   }
   .image-four {
-    max-width: 180px;
+    max-width: 215px;
     bottom: 150px;
   }
 }
@@ -381,19 +384,19 @@ button {
     width: 100%;
   }
   .image-one {
-    max-width: 150px;
+    max-width: 200px;
   }
   .image-two {
-    max-width: 115px;
+    max-width: 200px;
     left: 4%;
     top: 18%;
   }
   .image-three {
-    max-width: 100px;
+    max-width: 200px;
     right: 4%;
   }
   .image-four {
-    max-width: 150px;
+    max-width: 200px;
     right: 0;
   }
 }
