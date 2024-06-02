@@ -518,10 +518,16 @@ button {
 #photo-body h1 {
   font-size: 8vw !important;
 }
+#photo-body footer .logo {
+  color: var(--apple-logo);
+}
 
 #design-body {
   background-color: #c1bff2;
 }
 #design-body h1 {
   font-size: 8vw !important;
+}
+#design-body footer .logo {
+  color: var(--exotic-logo);
 }/*# sourceMappingURL=style.css.map */
