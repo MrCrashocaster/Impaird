@@ -27,9 +27,15 @@
     transition: all ease-in-out 0.3s;
   }
 
+  #section1 {
+    .image-one {
+      max-width: 480px;
+    }
+  }
+
   #section2 {
     .image-four {
-      max-width: 480px;
+      max-width: 350px;
     }
   }
 
@@ -280,9 +286,15 @@
       font-size: 20px;
     }
 
+    #section1 {
+      .image-one {
+        max-width: 380px;
+      }
+    }
+
     #section2 {
       .image-four {
-        max-width: 280px;
+        max-width: 220px;
       }
     }
   

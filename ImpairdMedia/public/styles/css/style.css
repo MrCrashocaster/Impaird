@@ -205,8 +205,11 @@ img {
   mix-blend-mode: multiply;
   transition: all ease-in-out 0.3s;
 }
-.homepage-body #section2 .image-four {
+.homepage-body #section1 .image-one {
   max-width: 480px;
+}
+.homepage-body #section2 .image-four {
+  max-width: 350px;
 }
 .homepage-body #section4 .image-two {
   max-width: 200px;
@@ -439,8 +442,11 @@ img {
     width: 60px;
     font-size: 20px;
   }
+  .homepage-body #section1 .image-one {
+    max-width: 380px;
+  }
   .homepage-body #section2 .image-four {
-    max-width: 280px;
+    max-width: 220px;
   }
   .homepage-body #section4 .image-two {
     max-width: 100px;
