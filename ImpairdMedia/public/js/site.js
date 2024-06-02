@@ -1,6 +1,6 @@
 //............................................................... Script ...................................................................
 // Data for the sections
-let h1Texts = ["<a href='www.google.com'>Video</a>", "<a href='www.google.com'>Photo</a>", "<a href='www.google.com'>Design</a>"]; // Add your h1 texts here
+let h1Texts = ["<a href='/video.html'>Video</a>", "<a href='/photography.html'>Photo</a>", "<a href='/design.html'>Design</a>"]; // Add your h1 texts here
 let logoColors = [
   "var(--pear-logo)",
   "var(--apple-logo)",
